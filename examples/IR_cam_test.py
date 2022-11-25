@@ -43,7 +43,7 @@ fig_dims = (12,9) # figure size
 fig,ax = plt.subplots(figsize=fig_dims) # start figure
 pix_res = (8,8) # pixel resolution
 zz = np.zeros(pix_res) # set array with zeros first
-im1 = ax.imshow(zz,vmin=15,vmax=40) # plot image, with temperature bounds
+im1 = ax.imshow(zz,vmin=15,vmax=40, cmap=plt.cm.RdBu_r) # plot image, with temperature bounds
 cbar = fig.colorbar(im1,fraction=0.0475,pad=0.03) # colorbar
 cbar.set_label('Temperature [C]',labelpad=10) # temp. label
 fig.canvas.draw() # draw figure
