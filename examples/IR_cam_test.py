@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 # Initialization of Sensor
 #####################################
 #
+
 t0 = time.time()
 sensor = []
 while (time.time()-t0)<1: # wait 1sec for sensor to start
